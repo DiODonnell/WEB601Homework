@@ -33,4 +33,15 @@ const incrementByOne = (num) => ++num
 const FirstIncrementbyOne = incrementByOne(6)
 console.log(FirstIncrementbyOne)
     
-  
+ function divisibleBy200Check(num) {
+    if  (num % 200 !== 0)
+    {
+       return false
+    }
+    else
+    {
+         return true
+    }
+ }
+const FirstDivisibleBy200Check = divisibleBy200Check(4)
+console.log(FirstDivisibleBy200Check)
