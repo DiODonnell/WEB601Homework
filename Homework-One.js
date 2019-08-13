@@ -45,3 +45,51 @@ console.log(FirstIncrementbyOne)
  }
 const FirstDivisibleBy200Check = divisibleBy200Check(4)
 console.log(FirstDivisibleBy200Check)
+
+function checkIfEmptyString(string) {
+    if (string === "") {
+        return true
+
+    }
+    return false
+}
+
+
+const firstEmptyStringCheck = checkIfEmptyString('')
+
+console.log(firstEmptyStringCheck)
+
+function CompareLengthofTwoStrings(string1, string2) {
+    if (string1.length === string2.length) {
+        return true
+    }
+    return false
+}
+
+const firstStringLemghtComparison = CompareLengthofTwoStrings('bad', 'red')
+
+console.log(firstStringLemghtComparison)
+
+
+
+
+function checkIfplural(string1) {
+   if (string1.slice(-1) === 's') {
+       return true
+   }
+   return false
+
+} 
+
+const firstPluralCheck = checkIfplural('rat')
+console.log(firstPluralCheck)
+
+function calculateExponent(baseNum, exponentNum) {
+    if (baseNum < 0 || exponentNum < 0) {
+      return 'You need positive integers to calculate exponent!';
+    }
+    return Math.pow(baseNum, exponentNum);
+  }
+
+const firstcalculateExponent = calculateExponent(3, 3)
+console.log(firstcalculateExponent)
